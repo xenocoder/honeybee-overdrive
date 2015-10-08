@@ -1,0 +1,8 @@
+Version 1.0
+Initial release and original layout
+
+Version 1.01
+Added route between D5 and D6 (missing on V1.0 boards, have to jumper)
+
+Version 1.1
+Layout changed so that right angle pots can be used to hold PCB in place.

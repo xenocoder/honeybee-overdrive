@@ -2468,6 +2468,34 @@ often used in power supply to prevent damage from reverse polarization
 <text x="3.937" y="2.032" size="0.6096" layer="21" ratio="12" rot="R180">1</text>
 <text x="2.54" y="2.54" size="1.016" layer="21" rot="R180">&gt;NAME</text>
 </package>
+<package name="9MM-ALPHA">
+<description>Alpha 9MM Micro pots
+RV09AF-40-20K-[A|B|C]{value}K</description>
+<pad name="2" x="0" y="0" drill="0.8382" diameter="1.651"/>
+<pad name="3" x="-2.0574" y="0" drill="0.8382" diameter="1.651"/>
+<pad name="1" x="2.032" y="0" drill="0.8382" diameter="1.651"/>
+<pad name="A1" x="5.2451" y="7.0104" drill="2.1082" diameter="2.794" shape="long" rot="R270"/>
+<pad name="A2" x="-5.2451" y="7.0104" drill="2.1082" diameter="2.794" shape="long" rot="R270"/>
+<wire x1="-4.9022" y1="14.0208" x2="4.9022" y2="14.0208" width="0.0508" layer="22" style="shortdash"/>
+<wire x1="4.9022" y1="14.0208" x2="4.9022" y2="0" width="0.0508" layer="22" style="shortdash"/>
+<wire x1="4.9022" y1="0" x2="-4.9022" y2="0" width="0.0508" layer="22" style="shortdash"/>
+<wire x1="-4.9022" y1="0" x2="-4.9022" y2="14.0208" width="0.0508" layer="22" style="shortdash"/>
+<circle x="0" y="7.0104" radius="2.54" width="0.127" layer="22"/>
+<circle x="-3.175" y="12.065" radius="1.27" width="0.0508" layer="22"/>
+<circle x="3.175" y="12.065" radius="1.27" width="0.0508" layer="22"/>
+<circle x="3.175" y="2.54" radius="1.27" width="0.0508" layer="22"/>
+<circle x="-3.175" y="2.54" radius="1.27" width="0.0508" layer="22"/>
+<circle x="0" y="7.0104" radius="2.9972" width="0.127" layer="22"/>
+<circle x="0" y="7.0104" radius="2.286" width="0.0508" layer="22"/>
+<wire x1="3.048" y1="1.016" x2="3.048" y2="-1.016" width="0.0762" layer="21" style="shortdash"/>
+<wire x1="3.048" y1="-1.016" x2="-3.048" y2="-1.016" width="0.0762" layer="21" style="shortdash"/>
+<wire x1="3.048" y1="1.016" x2="-3.048" y2="1.016" width="0.0762" layer="21" style="shortdash"/>
+<wire x1="-3.048" y1="1.016" x2="-3.048" y2="-1.016" width="0.0762" layer="21" style="shortdash"/>
+<text x="3.175" y="-1.27" size="0.8128" layer="21" ratio="12">1</text>
+<text x="-3.81" y="-1.27" size="0.8128" layer="21" ratio="12">3</text>
+<text x="-3.175" y="1.905" size="1.27" layer="27" ratio="12">&gt;VALUE</text>
+<text x="-3.175" y="-3.175" size="1.27" layer="21" ratio="12">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POT">
@@ -2604,6 +2632,16 @@ often used in power supply to prevent damage from reverse polarization
 </technologies>
 </device>
 <device name="16MM_PCB_PADS_SMALL" package="16MM_PCB_PADS_SMALL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="9MM-ALPHA" package="9MM-ALPHA">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2848,12 +2886,13 @@ grid 2.54 mm</description>
 <part name="C14" library="mb_caps-electro" deviceset="050" device="1" value="22uF"/>
 <part name="D5" library="mb_diodes" deviceset="1N400X" device=".3" value="1N4007"/>
 <part name="D6" library="mb_diodes" deviceset="1N9*ZENER" device="" value="5v1 Zener"/>
-<part name="LED" library="mb_supply" deviceset="PAD" device="" value="3mm"/>
+<part name="LED" library="mb_diodes" deviceset="LED" device="3MM" value="3mm"/>
 <part name="C13" library="mb_caps-electro" deviceset="080" device="1" value="100uF"/>
 <part name="GND13" library="mb_supply" deviceset="GND" device=""/>
 <part name="VC2" library="mb_supply" deviceset="VC" device=""/>
 <part name="GND1" library="mb_supply" deviceset="GND" device=""/>
 <part name="GND6" library="mb_supply" deviceset="GND" device=""/>
+<part name="L/SW" library="mb_supply" deviceset="PAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2886,7 +2925,7 @@ grid 2.54 mm</description>
 <instance part="R12" gate="G$1" x="162.56" y="111.76" rot="R90"/>
 <instance part="R13" gate="G$1" x="195.58" y="101.6"/>
 <instance part="R14" gate="G$1" x="185.42" y="132.08"/>
-<instance part="R15" gate="G$1" x="210.82" y="144.78"/>
+<instance part="R15" gate="G$1" x="205.74" y="144.78"/>
 <instance part="C1" gate="G$1" x="27.94" y="96.52" rot="R90"/>
 <instance part="C2" gate="G$1" x="73.66" y="101.6" rot="R90"/>
 <instance part="C3" gate="G$1" x="33.02" y="50.8" rot="R180"/>
@@ -2920,12 +2959,13 @@ grid 2.54 mm</description>
 <instance part="C14" gate="1" x="129.54" y="124.46"/>
 <instance part="D5" gate="1" x="203.2" y="132.08" rot="R180"/>
 <instance part="D6" gate="G$1" x="195.58" y="144.78" rot="R180"/>
-<instance part="LED" gate="G$1" x="223.52" y="144.78"/>
+<instance part="LED" gate="G$1" x="218.44" y="144.78" rot="R180"/>
 <instance part="C13" gate="G$1" x="170.18" y="124.46"/>
 <instance part="GND13" gate="GND" x="213.36" y="76.2"/>
 <instance part="VC2" gate="G$1" x="170.18" y="142.24"/>
 <instance part="GND1" gate="GND" x="129.54" y="111.76"/>
 <instance part="GND6" gate="GND" x="139.7" y="111.76"/>
+<instance part="L/SW" gate="G$1" x="226.06" y="144.78"/>
 </instances>
 <busses>
 </busses>
@@ -3286,14 +3326,7 @@ grid 2.54 mm</description>
 <segment>
 <pinref part="D6" gate="G$1" pin="A"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="144.78" x2="205.74" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="R15" gate="G$1" pin="2"/>
-<pinref part="LED" gate="G$1" pin="PAD"/>
-<wire x1="215.9" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="144.78" x2="200.66" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+9V" class="0">
@@ -3301,6 +3334,20 @@ grid 2.54 mm</description>
 <pinref part="D5" gate="1" pin="A"/>
 <pinref part="+9V" gate="+9V" pin="+9V"/>
 <wire x1="208.28" y1="132.08" x2="220.98" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="LED" gate="G$1" pin="A"/>
+<wire x1="213.36" y1="144.78" x2="210.82" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="LED" gate="G$1" pin="C"/>
+<pinref part="L/SW" gate="G$1" pin="PAD"/>
+<wire x1="223.52" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

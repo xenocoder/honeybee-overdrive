@@ -1,0 +1,59 @@
+Partlist
+
+Exported from HoneyBee.sch at 12/16/2013 8:18:29 PM
+
+EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+
+Assembly variant: 
+
+Part     Value          Device       Package     Library          Sheet
+
++9V      +9V(T)         +9V(T)       SQUARE      mb_supply        1
+C1       47n            075X0402     075X040     mb_caps-chicklet 1
+C2       100pF          050X030_0251 050X030_025 mb_caps-ceramic  1
+C3       220n           080X0502     080X050     mb_caps-chicklet 1
+C4       2.2uF          0501         050_020_1   mb_caps-electro  1
+C5       4n7            070X0302     070X030     mb_caps-chicklet 1
+C6       1uF            080X0502     080X050     mb_caps-chicklet 1
+C7       22n            075X0302     075X030     mb_caps-chicklet 1
+C8       4n7            070X0302     070X030     mb_caps-chicklet 1
+C9       22n            075X0302     075X030     mb_caps-chicklet 1
+C10      4n7            070X0302     070X030     mb_caps-chicklet 1
+C11      1uF            080X0502     080X050     mb_caps-chicklet 1
+C12      4n7            070X0302     070X030     mb_caps-chicklet 1
+C13      100uF          0801         080_035_1   mb_caps-electro  1
+C14      22uF           0501         050_020_1   mb_caps-electro  1
+D1       LED3MM         LED3MM       LED3MM      mb_diodes        1
+D2       LED3MM         LED3MM       LED3MM      mb_diodes        1
+D3       1N4007         1N400X.3     DO41-3      mb_diodes        1
+D4       1N4007         1N400X.3     DO41-3      mb_diodes        1
+D5       1N4007         1N400X.3     DO41-3      mb_diodes        1
+D6       5v1 Zener      1N9ZENER     DO35-3      mb_diodes        1
+DRIVE    A500k          POT          POT         mb_pots          1
+G1       GND(T)         GND(T)       SQUARE      mb_supply        1
+G2       GND(T)         GND(T)       SQUARE      mb_supply        1
+G3       GND(T)         GND(T)       SQUARE      mb_supply        1
+IC2      CA3130EZLMP    CA3130EZLMP  DIL08       mb_ics           1
+IN1      IN(T)          IN(T)        SQUARE      mb_supply        1
+LED      3mm            PAD          SQUARE      mb_supply        1
+NAT      B50k           POT          POT         mb_pots          1
+OUT      OUT(T)         OUT(T)       SQUARE      mb_supply        1
+Q1       2N5457         2N5457       TO92-       mb_trans         1
+R1       1M             6MM.3        R0207/3     mb_resistors     1
+R2       360k           6MM.3        R0207/3     mb_resistors     1
+R3       15k            6MM.3        R0207/3     mb_resistors     1
+R4       3k             6MM.3        R0207/3     mb_resistors     1
+R5       1k             6MM.3        R0207/3     mb_resistors     1
+R6       1k             6MM.3        R0207/3     mb_resistors     1
+R7       27k            6MM.3        R0207/3     mb_resistors     1
+R8       10k            6MM.3        R0207/3     mb_resistors     1
+R9       47k            6MM.3        R0207/3     mb_resistors     1
+R10      1M             6MM.3        R0207/3     mb_resistors     1
+R11      2k2            6MM.3        R0207/3     mb_resistors     1
+R12      5k6            6MM.3        R0207/3     mb_resistors     1
+R13      47k            6MM.3        R0207/3     mb_resistors     1
+R14      51R            6MM.3        R0207/3     mb_resistors     1
+R15      1k             6MM.3        R0207/3     mb_resistors     1
+R16      31k6           6MM.3        R0207/3     mb_resistors     1
+R17      31k6           6MM.3        R0207/3     mb_resistors     1
+VOL      A50k           POT          POT         mb_pots          1
