@@ -66,9 +66,6 @@
 <wire x1="49.2" y1="0" x2="49.2" y2="49.52" width="0" layer="20"/>
 <wire x1="49.2" y1="49.52" x2="0" y2="49.52" width="0" layer="20"/>
 <wire x1="0" y1="49.52" x2="0" y2="0" width="0" layer="20"/>
-<text x="5.207" y="47.371" size="1.27" layer="21" font="vector">Xenocoder Designs</text>
-<text x="3.81" y="2.54" size="0.8128" layer="25" font="vector" rot="R90">v1.1 2018 08</text>
-<text x="2.286" y="2.54" size="0.8128" layer="25" font="vector" rot="R90">Yellow Jacket</text>
 </plain>
 <libraries>
 <library name="mb_supply">
@@ -631,147 +628,88 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="+9V" library="mb_supply" package="SQUARE" value="+9V(T)" x="8.001" y="3.8133" smashed="yes">
-<attribute name="NAME" x="6.096" y="1.1463" size="1.27" layer="25" ratio="12"/>
+<attribute name="NAME" x="31.623" y="2.7973" size="1.27" layer="25" ratio="12"/>
 </element>
 <element name="G1" library="mb_supply" package="SQUARE" value="GND(T)" x="10.795" y="3.8133" smashed="yes">
-<attribute name="NAME" x="9.652" y="1.1463" size="1.27" layer="25" ratio="12"/>
+<attribute name="NAME" x="12.065" y="3.1783" size="1.27" layer="25" ratio="12"/>
 </element>
-<element name="IN" library="mb_supply" package="SQUARE" value="IN(T)" x="30.353" y="3.8133" smashed="yes">
-<attribute name="NAME" x="29.464" y="1.0193" size="1.27" layer="25" ratio="12"/>
-</element>
+<element name="IN1" library="mb_supply" package="SQUARE" value="IN(T)" x="30.353" y="3.8133"/>
 <element name="OUT" library="mb_supply" package="SQUARE" value="OUT(T)" x="15.875" y="3.8133" smashed="yes">
-<attribute name="NAME" x="13.97" y="1.1463" size="1.27" layer="25" ratio="12"/>
+<attribute name="NAME" x="13.716" y="2.7973" size="1.27" layer="25" ratio="12"/>
 </element>
-<element name="R1" library="mb_resistors" package="R0207/3" value="1M" x="42.418" y="4.445" smashed="yes" rot="R180">
-<attribute name="NAME" x="43.688" y="5.08" size="1.27" layer="25" font="vector" ratio="12" rot="R180"/>
-</element>
-<element name="R2" library="mb_resistors" package="R0207/3" value="360k" x="19.431" y="11.049" smashed="yes" rot="R90">
-<attribute name="NAME" x="20.066" y="10.16" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
-</element>
-<element name="R3" library="mb_resistors" package="R0207/3" value="15k" x="28.067" y="11.049" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.702" y="9.779" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
-</element>
-<element name="R4" library="mb_resistors" package="R0207/3" value="3k" x="34.671" y="46.101" smashed="yes">
-<attribute name="NAME" x="33.401" y="45.466" size="1.27" layer="25" font="vector" ratio="12"/>
-</element>
-<element name="R5" library="mb_resistors" package="R0207/3" value="1k" x="34.798" y="40.005" smashed="yes">
-<attribute name="NAME" x="33.528" y="39.37" size="1.27" layer="25" font="vector" ratio="12"/>
-</element>
-<element name="R6" library="mb_resistors" package="R0207/3" value="1k" x="38.354" y="29.464" smashed="yes" rot="R180">
-<attribute name="NAME" x="39.624" y="30.099" size="1.27" layer="25" font="vector" ratio="12" rot="R180"/>
-</element>
+<element name="R1" library="mb_resistors" package="R0207/3" value="1M" x="42.418" y="4.445" rot="R180"/>
+<element name="R2" library="mb_resistors" package="R0207/3" value="360k" x="19.431" y="11.049" rot="R90"/>
+<element name="R3" library="mb_resistors" package="R0207/3" value="15k" x="28.067" y="11.049" rot="R90"/>
+<element name="R4" library="mb_resistors" package="R0207/3" value="3k" x="34.671" y="46.101"/>
+<element name="R5" library="mb_resistors" package="R0207/3" value="1k" x="34.798" y="40.005"/>
+<element name="R6" library="mb_resistors" package="R0207/3" value="1k" x="38.354" y="29.464" rot="R180"/>
 <element name="R7" library="mb_resistors" package="R0207/3" value="27k" x="34.798" y="43.053" smashed="yes">
 <attribute name="NAME" x="33.528" y="42.418" size="1.27" layer="25" font="vector" ratio="12"/>
 </element>
 <element name="R8" library="mb_resistors" package="R0207/3" value="10k" x="3.429" y="18.034" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.064" y="17.272" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
+<attribute name="NAME" x="4.064" y="16.764" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
 </element>
-<element name="R9" library="mb_resistors" package="R0207/3" value="47k" x="34.925" y="36.957" smashed="yes">
-<attribute name="NAME" x="33.655" y="36.322" size="1.27" layer="25" font="vector" ratio="12"/>
-</element>
+<element name="R9" library="mb_resistors" package="R0207/3" value="47k" x="34.925" y="36.957"/>
 <element name="R10" library="mb_resistors" package="R0207/3" value="1M" x="3.429" y="42.418" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.794" y="43.688" size="1.27" layer="25" font="vector" ratio="12" rot="R270"/>
 </element>
-<element name="R11" library="mb_resistors" package="R0207/3" value="2k2" x="24.511" y="22.606" smashed="yes" rot="R90">
-<attribute name="NAME" x="25.146" y="21.082" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
-</element>
-<element name="R12" library="mb_resistors" package="R0207/3" value="5k6" x="21.463" y="22.479" smashed="yes" rot="R270">
-<attribute name="NAME" x="20.828" y="24.511" size="1.27" layer="25" font="vector" ratio="12" rot="R270"/>
-</element>
-<element name="R13" library="mb_resistors" package="R0207/3" value="47k" x="12.446" y="41.656" smashed="yes" rot="R270">
-<attribute name="NAME" x="11.811" y="43.434" size="1.27" layer="25" font="vector" ratio="12" rot="R270"/>
-</element>
-<element name="R14" library="mb_resistors" package="R0207/3" value="51R" x="9.779" y="11.049" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.414" y="9.779" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
-</element>
-<element name="R15" library="mb_resistors" package="R0207/3" value="1k" x="30.861" y="11.049" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.226" y="12.954" size="1.27" layer="25" font="vector" ratio="12" rot="R270"/>
-</element>
+<element name="R11" library="mb_resistors" package="R0207/3" value="2k2" x="24.511" y="22.606" rot="R90"/>
+<element name="R12" library="mb_resistors" package="R0207/3" value="5k6" x="21.463" y="22.479" rot="R270"/>
+<element name="R13" library="mb_resistors" package="R0207/3" value="47k" x="12.446" y="41.656" rot="R270"/>
+<element name="R14" library="mb_resistors" package="R0207/3" value="51R" x="9.779" y="11.049" rot="R90"/>
+<element name="R15" library="mb_resistors" package="R0207/3" value="1k" x="30.861" y="11.049" rot="R270"/>
 <element name="C1" library="mb_caps-chicklet" package="075X040" value="47n" x="34.798" y="10.414" smashed="yes" rot="R90">
 <attribute name="NAME" x="35.306" y="9.298" size="1.27" layer="25" ratio="12" rot="R90"/>
 </element>
 <element name="C2" library="mb_caps-ceramic" package="050X030_025" value="100pF" x="44.831" y="19.304" smashed="yes" rot="R180">
-<attribute name="NAME" x="45.9232" y="22.3012" size="1.27" layer="25" ratio="12" rot="R180"/>
+<attribute name="NAME" x="40.5638" y="20.2692" size="1.27" layer="25" ratio="12" rot="R270"/>
 </element>
-<element name="C3" library="mb_caps-chicklet" package="080X050" value="220n" x="43.561" y="42.926" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.307" y="41.402" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="C3" library="mb_caps-chicklet" package="080X050" value="220n" x="43.561" y="42.926" rot="R90"/>
 <element name="C4" library="mb_caps-electro" package="050_020_1" value="2.2uF" x="26.67" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.305" y="37.592" size="0.8128" layer="25" ratio="12" rot="R180"/>
 </element>
-<element name="C5" library="mb_caps-chicklet" package="070X030" value="4n7" x="28.829" y="22.479" smashed="yes" rot="R270">
-<attribute name="NAME" x="28.194" y="23.622" size="1.27" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="D1" library="mb_diodes" package="LED3MM" value="LED3MM" x="42.164" y="34.036" smashed="yes" rot="R90"/>
-<element name="D2" library="mb_diodes" package="LED3MM" value="LED3MM" x="46.101" y="33.909" smashed="yes" rot="R270"/>
+<element name="C5" library="mb_caps-chicklet" package="070X030" value="4n7" x="28.829" y="22.479" rot="R270"/>
+<element name="D1" library="mb_diodes" package="LED3MM" value="LED3MM" x="42.164" y="34.036" rot="R90"/>
+<element name="D2" library="mb_diodes" package="LED3MM" value="LED3MM" x="46.101" y="33.909" rot="R270"/>
 <element name="D3" library="mb_diodes" package="DO41-3" value="1N4007" x="14.859" y="18.796" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.6972" y="19.431" size="1.27" layer="25" ratio="12" rot="R180"/>
 </element>
 <element name="D4" library="mb_diodes" package="DO41-3" value="1N4007" x="34.925" y="34.036" smashed="yes" rot="R180">
 <attribute name="NAME" x="35.7632" y="34.671" size="1.27" layer="25" ratio="12" rot="R180"/>
 </element>
-<element name="NAT" library="mb_pots" package="16MM" value="A50k" x="25.019" y="29.464" smashed="yes" rot="R180">
-<attribute name="NAME" x="26.67" y="32.512" size="1.27" layer="21" ratio="12" rot="R180"/>
-</element>
-<element name="DRIVE" library="mb_pots" package="16MM" value="A500k" x="39.116" y="25.654" smashed="yes">
-<attribute name="NAME" x="38.227" y="22.352" size="1.27" layer="21" ratio="12"/>
-</element>
-<element name="VOL" library="mb_pots" package="16MM" value="B50k" x="10.414" y="25.654" smashed="yes">
-<attribute name="NAME" x="9.525" y="22.479" size="1.27" layer="21" ratio="12"/>
-</element>
-<element name="IC2" library="mb_ics" package="DIL08" value="CA3130EZLMP" x="42.291" y="11.684" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.799" y="10.033" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
-</element>
-<element name="C6" library="mb_caps-chicklet" package="080X050" value="1uF" x="18.796" y="35.814" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.939" y="36.449" size="1.27" layer="25" ratio="12" rot="R180"/>
-</element>
-<element name="C7" library="mb_caps-chicklet" package="075X030" value="22n" x="25.781" y="42.799" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.273" y="44.038" size="1.27" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="C8" library="mb_caps-chicklet" package="070X030" value="4n7" x="20.955" y="42.799" smashed="yes" rot="R90">
-<attribute name="NAME" x="21.463" y="41.656" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="C9" library="mb_caps-chicklet" package="075X030" value="22n" x="7.62" y="32.893" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.985" y="34.005" size="1.27" layer="25" ratio="12" rot="R270"/>
-</element>
+<element name="NAT" library="mb_pots" package="16MM" value="A50k" x="25.019" y="29.464" rot="R180"/>
+<element name="DRIVE" library="mb_pots" package="16MM" value="A500k" x="39.116" y="25.654"/>
+<element name="VOL" library="mb_pots" package="16MM" value="B50k" x="10.414" y="25.654"/>
+<element name="IC2" library="mb_ics" package="DIL08" value="CA3130EZLMP" x="42.291" y="11.684" rot="R90"/>
+<element name="C6" library="mb_caps-chicklet" package="080X050" value="1uF" x="18.796" y="35.814" rot="R180"/>
+<element name="C7" library="mb_caps-chicklet" package="075X030" value="22n" x="25.781" y="42.799" rot="R270"/>
+<element name="C8" library="mb_caps-chicklet" package="070X030" value="4n7" x="20.955" y="42.799" rot="R90"/>
+<element name="C9" library="mb_caps-chicklet" package="075X030" value="22n" x="7.62" y="32.893" rot="R270"/>
 <element name="C10" library="mb_caps-chicklet" package="070X030" value="4n7" x="3.429" y="32.258" smashed="yes" rot="R270">
-<attribute name="NAME" x="2.921" y="33.274" size="0.8128" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="1.651" y="32.639" size="0.8128" layer="25" ratio="12" rot="R270"/>
 </element>
-<element name="R16" library="mb_resistors" package="R0207/3" value="31k6" x="16.383" y="11.049" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.748" y="12.954" size="1.27" layer="25" font="vector" ratio="12" rot="R270"/>
-</element>
-<element name="R17" library="mb_resistors" package="R0207/3" value="31k6" x="22.479" y="11.049" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.114" y="9.525" size="1.27" layer="25" font="vector" ratio="12" rot="R90"/>
-</element>
-<element name="C11" library="mb_caps-chicklet" package="080X050" value="1uF" x="7.493" y="42.926" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.477" y="41.402" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
+<element name="R16" library="mb_resistors" package="R0207/3" value="31k6" x="16.383" y="11.049" rot="R270"/>
+<element name="R17" library="mb_resistors" package="R0207/3" value="31k6" x="22.479" y="11.049" rot="R90"/>
+<element name="C11" library="mb_caps-chicklet" package="080X050" value="1uF" x="7.493" y="42.926" rot="R90"/>
 <element name="Q1" library="mb_trans" package="TO92-" value="2N5457" x="12.446" y="32.004" smashed="yes" rot="R270">
-<attribute name="NAME" x="13.462" y="32.893" size="1.016" layer="25" ratio="12" rot="R270"/>
+<attribute name="NAME" x="13.462" y="32.512" size="1.016" layer="25" ratio="12" rot="R270"/>
+<attribute name="VALUE" x="10.795" y="33.655" size="0.6096" layer="27" ratio="12" rot="R270"/>
 </element>
 <element name="C12" library="mb_caps-chicklet" package="070X030" value="4n7" x="16.256" y="42.926" smashed="yes" rot="R90">
-<attribute name="NAME" x="17.399" y="41.021" size="1.27" layer="25" ratio="12" rot="R90"/>
+<attribute name="NAME" x="16.891" y="41.402" size="1.27" layer="25" ratio="12" rot="R90"/>
 </element>
-<element name="C14" library="mb_caps-electro" package="050_020_1" value="22uF" x="7.366" y="20.701" smashed="yes" rot="R270">
-<attribute name="NAME" x="5.334" y="21.844" size="0.8128" layer="25" ratio="12" rot="R270"/>
+<element name="C14" library="mb_caps-electro" package="050_020_1" value="22uF" x="7.366" y="20.701" rot="R270"/>
+<element name="D5" library="mb_diodes" package="DO41-3" value="1N4007" x="6.35" y="11.049" rot="R270"/>
+<element name="D6" library="mb_diodes" package="DO35-3" value="5v1 Zener" x="13.208" y="11.049" rot="R270"/>
+<element name="LED" library="mb_diodes" package="LED3MM" value="3mm" x="24.765" y="3.81" smashed="yes" rot="R180">
+<attribute name="NAME" x="26.162" y="5.334" size="1.27" layer="25" ratio="12" rot="R270"/>
 </element>
-<element name="D5" library="mb_diodes" package="DO41-3" value="1N4007" x="6.35" y="11.049" smashed="yes" rot="R270">
-<attribute name="NAME" x="5.715" y="11.8872" size="1.27" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="D6" library="mb_diodes" package="DO35-3" value="5v1 Zener" x="13.208" y="11.049" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.573" y="12.065" size="1.27" layer="25" ratio="12" rot="R270"/>
-</element>
-<element name="LED" library="mb_diodes" package="LED3MM" value="3mm" x="24.765" y="3.81" smashed="yes" rot="R180"/>
-<element name="C13" library="mb_caps-electro" package="080_035_1" value="100uF" x="34.671" y="19.685" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.465" y="18.796" size="1.27" layer="25" ratio="12" rot="R90"/>
-</element>
-<element name="L" library="mb_supply" package="SQUARE" value="" x="19.558" y="3.8133" smashed="yes">
-<attribute name="NAME" x="19.304" y="1.0193" size="1.27" layer="25" ratio="12"/>
-</element>
+<element name="C13" library="mb_caps-electro" package="080_035_1" value="100uF" x="34.671" y="19.685" rot="R90"/>
+<element name="L/SW" library="mb_supply" package="SQUARE" value="" x="19.558" y="3.8133"/>
 </elements>
 <signals>
 <signal name="IN">
-<contactref element="IN" pad="1"/>
+<contactref element="IN1" pad="1"/>
 <contactref element="C1" pad="1"/>
 <contactref element="R1" pad="2"/>
 <wire x1="30.353" y1="3.8133" x2="30.7373" y2="3.8133" width="0.4064" layer="1"/>
@@ -1103,7 +1041,7 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="N$25">
 <contactref element="LED" pad="K"/>
-<contactref element="L" pad="1"/>
+<contactref element="L/SW" pad="1"/>
 <wire x1="19.558" y1="3.8133" x2="23.4917" y2="3.8133" width="0.4064" layer="1"/>
 <wire x1="23.4917" y1="3.8133" x2="23.495" y2="3.81" width="0.4064" layer="1"/>
 </signal>

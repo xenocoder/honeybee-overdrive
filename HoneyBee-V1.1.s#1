@@ -2835,7 +2835,7 @@ grid 2.54 mm</description>
 <parts>
 <part name="+9V" library="mb_supply" deviceset="+9V(T)" device=""/>
 <part name="G1" library="mb_supply" deviceset="GND(T)" device=""/>
-<part name="IN" library="mb_supply" deviceset="IN(T)" device=""/>
+<part name="IN1" library="mb_supply" deviceset="IN(T)" device=""/>
 <part name="OUT" library="mb_supply" deviceset="OUT(T)" device=""/>
 <part name="GND2" library="mb_supply" deviceset="GND" device=""/>
 <part name="GND3" library="mb_supply" deviceset="GND" device=""/>
@@ -2893,7 +2893,7 @@ grid 2.54 mm</description>
 <part name="VC2" library="mb_supply" deviceset="VC" device=""/>
 <part name="GND1" library="mb_supply" deviceset="GND" device=""/>
 <part name="GND6" library="mb_supply" deviceset="GND" device=""/>
-<part name="L" library="mb_supply" deviceset="PAD" device=""/>
+<part name="L/SW" library="mb_supply" deviceset="PAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2902,7 +2902,7 @@ grid 2.54 mm</description>
 <instances>
 <instance part="+9V" gate="+9V" x="223.52" y="132.08" rot="R270"/>
 <instance part="G1" gate="GND" x="20.32" y="76.2"/>
-<instance part="IN" gate="G$1" x="15.24" y="96.52"/>
+<instance part="IN1" gate="G$1" x="15.24" y="96.52"/>
 <instance part="OUT" gate="G$1" x="223.52" y="93.98"/>
 <instance part="GND2" gate="GND" x="162.56" y="66.04"/>
 <instance part="GND3" gate="GND" x="33.02" y="38.1"/>
@@ -2966,14 +2966,14 @@ grid 2.54 mm</description>
 <instance part="VC2" gate="G$1" x="170.18" y="142.24"/>
 <instance part="GND1" gate="GND" x="129.54" y="111.76"/>
 <instance part="GND6" gate="GND" x="139.7" y="111.76"/>
-<instance part="L" gate="G$1" x="226.06" y="144.78"/>
+<instance part="L/SW" gate="G$1" x="226.06" y="144.78"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="IN" class="0">
 <segment>
-<pinref part="IN" gate="G$1" pin="IN"/>
+<pinref part="IN1" gate="G$1" pin="IN"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="96.52" x2="20.32" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
@@ -3347,7 +3347,7 @@ grid 2.54 mm</description>
 <net name="N$25" class="0">
 <segment>
 <pinref part="LED" gate="G$1" pin="C"/>
-<pinref part="L" gate="G$1" pin="PAD"/>
+<pinref part="L/SW" gate="G$1" pin="PAD"/>
 <wire x1="223.52" y1="144.78" x2="220.98" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>

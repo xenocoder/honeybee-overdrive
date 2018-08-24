@@ -66,9 +66,6 @@
 <wire x1="49.2" y1="0" x2="49.2" y2="49.52" width="0" layer="20"/>
 <wire x1="49.2" y1="49.52" x2="0" y2="49.52" width="0" layer="20"/>
 <wire x1="0" y1="49.52" x2="0" y2="0" width="0" layer="20"/>
-<text x="5.207" y="47.371" size="1.27" layer="21" font="vector">Xenocoder Designs</text>
-<text x="3.81" y="2.54" size="0.8128" layer="25" font="vector" rot="R90">v1.1 2018 08</text>
-<text x="2.286" y="2.54" size="0.8128" layer="25" font="vector" rot="R90">Yellow Jacket</text>
 </plain>
 <libraries>
 <library name="mb_supply">
