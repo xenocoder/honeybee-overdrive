@@ -1,8 +1,8 @@
 Partlist
 
-Exported from HoneyBee.sch at 12/16/2013 8:18:29 PM
+Exported from HoneyBee-V1.1.sch at 9/5/18 7:39 PM
 
-EAGLE Version 6.4.0 Copyright (c) 1988-2013 CadSoft
+EAGLE Version 9.1.0 Copyright (c) 1988-2018 Autodesk, Inc.
 
 Assembly variant: 
 
@@ -29,14 +29,13 @@ D3       1N4007         1N400X.3     DO41-3      mb_diodes        1
 D4       1N4007         1N400X.3     DO41-3      mb_diodes        1
 D5       1N4007         1N400X.3     DO41-3      mb_diodes        1
 D6       5v1 Zener      1N9ZENER     DO35-3      mb_diodes        1
-DRIVE    A500k          POT          POT         mb_pots          1
+DRIVE    A500k          POT16MM      16MM        mb_pots          1
 G1       GND(T)         GND(T)       SQUARE      mb_supply        1
-G2       GND(T)         GND(T)       SQUARE      mb_supply        1
-G3       GND(T)         GND(T)       SQUARE      mb_supply        1
 IC2      CA3130EZLMP    CA3130EZLMP  DIL08       mb_ics           1
-IN1      IN(T)          IN(T)        SQUARE      mb_supply        1
-LED      3mm            PAD          SQUARE      mb_supply        1
-NAT      B50k           POT          POT         mb_pots          1
+IN       IN(T)          IN(T)        SQUARE      mb_supply        1
+L                       PAD          SQUARE      mb_supply        1
+LED      3mm            LED3MM       LED3MM      mb_diodes        1
+NAT      A50k           POT16MM      16MM        mb_pots          1
 OUT      OUT(T)         OUT(T)       SQUARE      mb_supply        1
 Q1       2N5457         2N5457       TO92-       mb_trans         1
 R1       1M             6MM.3        R0207/3     mb_resistors     1
@@ -56,4 +55,4 @@ R14      51R            6MM.3        R0207/3     mb_resistors     1
 R15      1k             6MM.3        R0207/3     mb_resistors     1
 R16      31k6           6MM.3        R0207/3     mb_resistors     1
 R17      31k6           6MM.3        R0207/3     mb_resistors     1
-VOL      A50k           POT          POT         mb_pots          1
+VOL      B50k           POT16MM      16MM        mb_pots          1
